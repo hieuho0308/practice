@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+
+        }
+
+        #root {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255 255 255);
+
+        }
+
+        .header {
+            width: 100%;
+            height: 80px;
+            background-color: #990d23;
+            display: flex
+        }
+
+        button {
+            border-radius: 10px;
+            color: #990d23;
+            margin-left: 40px;
+            background-color: #b4975a;
+            font-size: 16px;
+            line-height: 30px;
+            border: 1px solid #b4975a;
+
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .logo {
+            width: 110px;
+            padding: 10px;
+        }
+
+        .main {
+            width: 100%;
+            display: flex;
+            text-align: center;
+
+        }
+
+        #row-name {
+            background-color: brown;
+        }
+
+        .main-row {
+            width: 25%;
+            background-color: #f9f5f0;
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+        }
+
+        .slider {
+            display: block;
+            width: 100%;
+
+        }
+
+        .main-row .title {
+            font-size: 20px;
+            color: rgb(143, 20, 20);
+            margin: 0%;
+
+            font-size: 20px;
+
+        }
+
+        .main-row .text {
+            font-size: 12px;
+        }
+
+        .main-row .main-icon {
+            font-size: 40px;
+            color: rgb(153 13 35)
+        }
+
+
+        .footer {
+            width: 100vw;
+
+            background-color: rgb(180 151 90);
+        }
+
+        .header-menu {
+            display: flex;
+            font-size: 24px;
+            margin-left: 30%;
+            list-style: none;
+        }
+
+        .header-link {
+            color: rgb(245, 246, 241);
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px 25px 10px 20px;
+            margin-right: 5px;
+
+
+        }
+
+        .header-title {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        .header-sub-menu {
+            list-style: none;
+        }
+
+        .main-icon {
+            font-size: 40px;
+            color: rgb(92, 26, 8);
+        }
+
+        .content {
+            display: block;
+            color: rgb(249 255 255);
+            font-size: 9px;
+            background-color: #990d23;
+            text-align: center;
+            padding: 6px;
+        }
+
+        .content .text {
+            font-size: 16px;
+            color: white;
+
+        }
+
+        .item-main {
+            background-color: white;
+            padding: 0 15px;
+        }
+
+        h3 {
+            font-size: 24px;
+            text-align: center;
+            color: #b4975f;
+            position: relative;
+        }
+
+        h3::after {
+            position: absolute;
+            top: 50%;
+            z-index: -1;
+            content: '';
+            width: 100%;
+            display: block;
+            border-top: 2px dashed #d2c19c;
+        }
+
+        .menu {
+            display: grid;
+            text-align: center;
+            grid-template-columns: repeat(4, auto);
+            font-size: 18px;
+            color: #990d23;
+            background-color: #f9f5f0;
+
+
+        }
+
+        .item {
+            margin: 12px;
+        }
+
+        h4 {
+            text-align: center;
+            padding-top: 30px;
+            color: #990d23;
+            font-size: 24px;
+
+        }
+
+        .footer-main {
+            display: grid;
+
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div class="header">
+            <img src=" https://winecellar.vn/wp-content/uploads/2022/09/W-Bronze-logo-New-1.png " class="logo" />
+            <ul class="header-menu">
+                <li>
+                    <a href="project.html" class="header-link"> TRANG CHỦ </a>
+
+                </li>
+                <li>
+                    <a href="" class="header-link"> RƯỢU VANG </a>
+
+                </li>
+                <li>
+                    <a href="" class="header-link"> RƯỢU MẠNH </a>
+
+
+                </li>
+                <li>
+                    <a href="" class="header-link"> RƯỢU PHA CHẾ </a>
+
+
+                </li>
+                <li>
+                    <a href="" class="header-link"> KHUYẾN MÃI </a>
+
+                </li>
+
+                <li>
+                    <button> <a href="trangdangnhap.html" class="header-title"
+                            style="text-decoration: none; color: white;"> ĐĂNG NHẬP
+                        </a> </button>
+
+                </li>
+
+                <li>
+                    <button><a href="trangdangky.html" class="header-title"> ĐĂNG KÝ
+                        </a></button>
+
+                </li>
+                <li>
+                    <a href="" class="header-link"> <i class="fa-solid fa-magnifying-glass"></i> </a>
+
+                </li>
+
+            </ul>
+        </div>
+
+        <div>
+            <img src="https://winecellar.vn/wp-content/uploads/2023/06/banner-pedesclaux.jpg" class="slider" />
+        </div>
+
+        <div class="content">
+            <h1>
+                <span> <strong> WINECELLAR.VN – WE ARE MASTER OF WINE</strong></span>
+
+            </h1>
+
+            <h3 class="text"> Nơi trải nghiệm rượu vang trọn vẹn và thăng hoa</h3>
+
+
+        </div>
+        <div class="main">
+            <div class="main-row">
+                <a href="" class="main-icon"> <i class="fa-solid fa-wine-bottle"></i></a>
+                <a href="" class="main-icon"> <i class="fa-solid fa-bottle-droplet"></i></a>
+                <p class="title"> 2000 Sản Phẩm </p>
+                <p class="text"> Nhập khẩu & phân phối chính hãng </p>
+            </div>
+
+            <div class="main-row">
+                <a href="" class="main-icon"> <i class="fa-sharp fa-solid fa-map-location-dot"></i></a>
+                <p class="title"> Giao Hàng Toàn Quốc </p>
+                <p class="text "> Linh hoạt giao hàng theo yêu cầu từ Khách hàng </p>
+            </div>
+            <div class="main-row">
+                <a href="" class="main-icon"><i class="fa-solid fa-truck"></i></a>
+                <p class="title"> Giao Hàng Nhanh </p>
+                <p class="text"> Miễn phí giao hàng tại
+                    Hà Nội, Đà Nẵng, Nha Trang,<br /> Hồ Chí Minh, Phú Quốc </p>
+            </div>
+            <div class="main-row">
+                <a href="" class="main-icon"><i class="fa-solid fa-thumbs-up"></i></a>
+                <p class="title"> Cam Kết Chất Lượng </p>
+                <p class="text"> Sản phẩm nhập nguyên chai, chính hãng,
+                    thương hiệu uy tín </p>
+            </div>
+        </div>
+        <section>
+            <h3><span class="item-main"> 2000 SẢN PHẨM & VÔ VÀN KHÁM PHÁ </span> </h3>
+
+            <div class="menu">
+                <div class="item">
+                    <img width="350px" src="https://winecellar.vn/wp-content/uploads/2022/04/rvch-scaled.jpg ">
+                    <p> Rượu Vang Chính Hãng</p>
+                </div>
+                <div class="item">
+                    <img width="350px" src="https://winecellar.vn/wp-content/uploads/2022/10/Popup-Gift-page.png ">
+                    <p> Quà Tặng Doanh Nghiệp</p>
+                </div>
+                <div class="item">
+                    <img width="350px" src="https://winecellar.vn/wp-content/uploads/2022/04/kien-thuc-ruou-vang.jpg ">
+                    <p> Bắt Đầu Sưu Tập Rượu Vang</p>
+                </div>
+                <div class="item">
+                    <img width="350px"
+                        src="https://winecellar.vn/wp-content/uploads/2022/04/su-kien-ruou-vang-ha-noi.jpg ">
+                    <p>Sự Kiện Rượu Vang </p>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <h3><span class="item-main"> SẢN PHẨM NỔI BẬT</span> </h3>
+            <div class="menu">
+                <div class="item">
+                    <img width="350px"
+                        src="https://winecellar.vn/wp-content/uploads/2020/05/tenuta-perano-chianti-classico-300x400.jpg">
+                    <p>Rượu vang Ý Tenuta Perano Chianti <br /> Classico 2017</p>
+                    <p>990.000 ₫ </p>
+                    <button> THÊM VÀO GIỎ HÀNG </button>
+                </div>
+                <div class="item">
+                    <img width="350px"
+                        src="https://winecellar.vn/wp-content/uploads/2018/11/champagne-charles-heidsieck-brut-reserve.jpg">
+                    <p> Rượu Champagne Charles Heidsieck<br /> Brut Réserve </p>
+                    <p> 1.100.000 ₫ – 12.980.000 ₫ </p>
+                    <button>THÊM VÀO GIỎ HÀNG</button>
+                </div>
+                <div class="item">
+                    <img width="350px" src="https://winecellar.vn/wp-content/uploads/2019/05/la-vite-lucente.jpg">
+                    <p>Rượu vang Ý Luce La Vite<br /> Lucente 2017</p>
+                    <p> 1.090.000 ₫</p>
+                    <button>THÊM VÀO GIỎ HÀNG</button>
+                </div>
+                <div class="item">
+                    <img width="350px"
+                        src="https://winecellar.vn/wp-content/uploads/2021/03/gemma-di-luna-prosecco-extra-dry-1.jpg">
+                    <p> Rượu Vang Sủi Gemma Di Luna Prosecco<br /> Extra Dry</p>
+                    <p> 530.000 ₫</p>
+                    <button>THÊM VÀO GIỎ HÀNG</button>
+                </div>
+
+
+            </div>
+
+        </section>
+        <section>
+            <h3> <span class="item-main"> KHÁM PHÁ THƯƠNG HIỆU</span></h3>
+            <p>Tự hào đại diện cho một số nhà sản xuất tốt nhất thế giới.</p>
+            <div class="menu">
+                <div class="item">
+                    <img width="350px"
+                        src="https://vcdn1-ngoisao.vnecdn.net/2013/10/12/canhdongnho11-7539-1381546938.jpg?w=460&h=0&q=100&dpr=1&fit=crop&s=4nVzQlLMIE60exZ1FcMsXQ ">
+                    <p> Champagne Billecart Salmon </p>
+                </div>
+                <div class="item">
+                    <img width="350px" src="https://winecellar.vn/wp-content/uploads/2023/04/Louis-Latour.jpg">
+                    <p> Louis Latour </p>
+                </div>
+                <div class="item">
+                    <img width="350px" src="https://winecellar.vn/wp-content/uploads/2022/04/cantina-la-salute.jpg">
+                    <p> Cantina La Salute </p>
+                </div>
+                <div class="item">
+                    <img width="350px" src="https://winecellar.vn/wp-content/uploads/2022/05/chateau-badette.jpg ">
+                    <p> Chateau Badette </p>
+                </div>
+
+            </div>
+        </section>
+        <setion>
+            <h3><span class="item-main"> KIẾN THỨC RƯỢU VANG</span></h3>
+            <div class="menu">
+                <div class="item">
+                    <img width="350px"
+                        src="https://winecellar.vn/wp-content/uploads/2023/05/bao-quan-ruou-vang-winecellarvn-1-533x400.jpg">
+                    <p> Điều kiện bảo quản giữ chất lượng vang tốt nhất </p>
+                </div>
+                <div class="item">
+                    <img width="350px"
+                        src="https://winecellar.vn/wp-content/uploads/2023/04/ruou-vang-cao-cap-comte-georges-de-vogue-533x400.jpg">
+                    <p> HIỂU ĐÚNG VỀ ĐỘ CỒN TRONG RƯỢU VANG<br /> VÀ XU HƯỚNG HIỆN NAY </p>
+                </div>
+                <div class="item">
+                    <img width="350px"
+                        src="https://winecellar.vn/wp-content/uploads/2022/06/nhung-giong-nho-pho-bien-nhat-de-san-xuat-ruou-vang-do-cabernet-sauvignon-533x400.jpg">
+                    <p> Những giống nho phổ biến nhất để sản xuất <br /> rượu vang đỏ </p>
+                </div>
+            </div>
+        </setion>
+
+        <div class="footer">
+
+            <h4> HỆ THỐNG HẦM RƯỢU VANG WINECELLAR.VN (CÔNG TY TNHH HẦM RƯỢU VIỆT NAM)</h4>
+            <div class="footer-main">
+                <div class="itmem">
+                    <h5><span>TP. HÀ NỘI</span></h5>
+                    <p>Số 78 Vũ Phạm Hàm, Yên Hòa, Cầu Giấy</p>
+
+                    <p> Số 43 Phan Chu Trinh, Hoàn Kiếm</p>
+
+                    <p>Số 88 Đào Tấn, Ba Đình</p>
+
+                    <p>Số 246 Hoàng Ngân, Cầu Giấy</p>
+
+                </div>
+                <div class="item">
+                    <h5><span>TP. HỒ CHÍ MINH</span> </h5>
+                    <p>
+                        Số 188 Nguyễn Văn Thủ, Quận 1, TP Hồ Chí Minh</p>
+
+                    <p>Số 253 Nam Kì Khởi Nghĩa, Quận 3, TP Hồ Chí Minh</p>
+
+                    <p> Số 58 Song Hành, An Phú, TP Thủ Đức
+                    </p>
+                </div>
+                <div class="item">
+                    <h5><span> TP. ĐÀ NẴNG </span></h5>
+                    <p> Số 172 Nguyễn Văn Linh, Vĩnh Trung, Thanh Khê</p>
+                    <h5><span>NHA TRANG</span> </h5>
+                    <p> Số 15 Hai Bà Trưng, Phường Xương Huân, Thành phố Nha Trang, Tỉnh Khánh Hòa</p>
+                </div>
+                <div class="item">
+                    <h5><span>HOTLINE</span> </h5>
+                    <p>
+                        <a href="0935 555 254 "> 0935 555 254</a>
+                    </p>
+                    <p>
+                        <a href=" 0905 119 063">0905 119 063</a>
+                    </p>
+
+                </div>
+
+</body>
+
+
+</html>
