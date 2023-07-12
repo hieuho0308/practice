@@ -5,41 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .input {
+            background-color: rgb(247, 246, 227);
+            padding: 11px 11px 11px 11px;
+            width: 170px;
+        }
+
+        .input-main {
+            padding: 9px;
+            font-size: 15px;
+            width: 377px;
+            background-color: rgb(247, 246, 227);
+
+        }
+
+        body {
+            text-align: center;
+        }
+
+        p {
+            margin: 0px;
+            font-size: 24px;
+        }
+
+        .input-size {
+            font-size: 20px;
+        }
+
+        .menu-wrapper {
+            background-color: rgb(229, 235, 117);
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
-    <form action="Dangkyfacebook">
-        <input type="text" id="Name" placeholder="First Name">
-        <input type="text" id="Name" placeholder="Surename">
+    <h1> ĐĂNG KÝ </h>
+        <form action="Dangkyfacebook">
+            <input type="text" id="Name" placeholder="First Name" class="input">
+            <input type="text" id="Name" placeholder="Surename" class="input">
 
-        <br />
-        <input type="text" id="Phone" placeholder="Mobile number or email address">
+            <br />
+            <input type="text" id="Phone" placeholder="Mobile number or email address" class="input-main">
 
-        <br />
-        <input type="password" placeholder="New password">
-        <p> Date of birth </p>
-        <select>
-            <option value="26"> 26 </option>
-        </select>
-        <select>
-            <option value="Jun"> Jun </option>
-        </select>
-        <select>
-            <option value="2023"> 2023</option>
-        </select>
-        <br>
-        <br>
+            <br />
+            <input type="password" placeholder="New password" class="input-main">
+            <br>
+            <p> Date of birth </p>
+            <select>
+                <option value="26"> 26 </option>
+            </select>
+            <select>
+                <option value="Jun"> Jun </option>
+            </select>
+            <select>
+                <option value="2023"> 2023</option>
+            </select>
+            <br>
 
-        <span> Gender </span> <br>
-        Female <input type="radio" />
-        Male <input type="radio" />
-        Custom <input type="radio" />
+            <a class="input-size">
+                <span> Gender </span> <br>
+                Female <input type="radio" />
+                Male <input type="radio" />
+                Custom <input type="radio" />
+
+            </a>
 
 
 
 
-    </form>
-    <a href="formdangnhap.html">Login</a>
+
+
+        </form>
+        <a href="formdangnhap.html" class="menu-wrapper">Login</a>
 
 </body>
 

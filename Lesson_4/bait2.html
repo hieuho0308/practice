@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    p {
+        display: block;
+    }
+
+    .left-group {
+        float: left;
+        margin-top: 60px;
+        margin-left: 400px;
+        font-size: 20px;
+    }
+
+    .right-group {
+        float: right;
+        margin-top: 60px;
+        margin-right: 500px;
+        font-size: 20px;
+    }
+
+    .input-main {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+    }
+
+
+
+    .input-size {
+        font-size: 16px;
+        border-color: gold;
+        margin-bottom: 10px;
+        border-radius: 5px;
+
+
+    }
+
+    .input-submit {
+        background-color: rgb(149, 22, 22);
+        color: aliceblue;
+        border-radius: 3px;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="left-group">
+        <h2> Thông tin liên hệ </h2>
+        <p> <strong> Hầm rượu vang WINECELLAR.vn </strong></p>
+        <p> <strong> Adress:</strong> Số 172 Nguyễn Văn Linh, Đà Nẵng </p>
+        <p>
+            <strong> Hotline: </strong>
+            <a href="tel 0935 555 254"> 0935 555 254</a>
+
+        <p>
+            <strong> Email: </strong> info@winecellar.vn
+
+        </p>
+
+
+
+    </section>
+    <section class="right-group">
+        <div class="input">
+            <p class="input-main"> Họ Tên </p>
+            <input type="text" id="Name" class="input-size" />
+            <p class="input-main"> Email </p>
+            <input type="text" id="email" class="input-size" />
+            <p class="input-main"> Số Điên Thoại </p>
+            <input type="text" id="Phone" class="input-size" />
+            <p class="input-main"> Nội Dung </p>
+            <textarea class="input-size"></textarea>
+            <br />
+            <input type="submit" value="Gửi đi" class="input-submit" />
+        </div>
+    </section>
+
+</body>
+
+</html>

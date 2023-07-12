@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            width: 100vw;
+            height: 100vh;
+            margin: 0px;
+        }
+
+        #root {
+            width: 100%;
+            height: 100%;
+        }
+
+        .header {
+            width: 100%;
+            height: 15%;
+            background-color: antiquewhite;
+        }
+
+        .main {
+            width: 100%;
+            height: 70%;
+            background-color: rgb(17, 62, 101);
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 200px 150px;
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+
+        }
+
+        .footer {
+            width: 100%;
+            height: 15%;
+            background-color: brown;
+        }
+
+        .main-row {
+            background-color: aqua;
+        }
+
+        @media only screen and (max-width:400px) {
+            .main {
+                background-color: rgb(190, 165, 165);
+                grid-template-columns: auto;
+                grid-template-rows: auto;
+            }
+
+        }
+
+        .main-row {
+            background-color: chocolate;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+        <div class="header"></div>
+        <div class="main">
+            <div class="main-row"></div>
+            <div class="main-row"></div>
+            <div class="main-row"></div>
+            <div class="main-row"></div>
+            <div class="main-row"></div>
+            <div class="main-row"></div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
